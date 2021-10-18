@@ -22,13 +22,13 @@ public:
 	Vector2D operator*(float scale) const;
 	Vector2D operator/(const Vector2D& rhs) const;
 	Vector2D operator/(float scale) const;
-	Vector2D &operator=(const Vector2D& rhs);
+	Vector2D& operator=(const Vector2D& rhs);
 
 	// shortcut operators
-	Vector2D &operator+=(const Vector2D& rhs);
-	Vector2D &operator-=(const Vector2D& rhs);
-	Vector2D &operator*=(const Vector2D& rhs);
-	Vector2D &operator/=(const Vector2D& rhs);
+	Vector2D& operator+=(const Vector2D& rhs);
+	Vector2D& operator-=(const Vector2D& rhs);
+	Vector2D& operator*=(const Vector2D& rhs);
+	Vector2D& operator/=(const Vector2D& rhs);
 
 	// comparison operators
 	bool operator==(const Vector2D& rhs) const;
@@ -42,9 +42,9 @@ public:
 	float& operator[](int component);
 
 	// increment / decrement operators
-	Vector2D &operator++();
+	Vector2D& operator++();
 	Vector2D operator++(int);
-	Vector2D &operator--();
+	Vector2D& operator--();
 	Vector2D operator--(int);
 
 	// input/output operator overloads
@@ -98,4 +98,3 @@ private:
 };
 
 #endif /* defined (__VECTOR2D__) */
-
